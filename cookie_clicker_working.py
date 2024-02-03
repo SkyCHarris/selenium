@@ -19,6 +19,7 @@ choose_lang.click()
 
 cookie = driver.find_element(By.ID, "bigCookie")
 cookie_count = driver.find_element(By.ID, "cookies")
+items = [driver.find_element(By.ID, "productPrice" + str(i)) for i in range(1, -1, -1)]
 
 actions = ActionChains(driver)  # actionchains object, works like a queue
 
